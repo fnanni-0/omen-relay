@@ -72,7 +72,6 @@ const PROXY_FACTORY_ABI = [
 ]
 
 module.exports = {
-  PK,
   PROVIDER_URL,
   GAS_LIMIT,
   GAS_PRICE,
