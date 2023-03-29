@@ -1,5 +1,5 @@
 const { ethers } = require('ethers')
-const { PK, PROVIDER_URL, MULTISEND_ADDRESS, MULTISEND_ABI } = require('./constants')
+const { PROVIDER_URL, MULTISEND_ADDRESS, MULTISEND_ABI } = require('./constants')
 
 const joinHexData = (hexData) => {
   return `0x${hexData
@@ -66,7 +66,7 @@ const encodeCallData = (transactions) => {
 const getRelayer = () => {
   // setup signer/provider
   const provider = new ethers.providers.JsonRpcProvider(PROVIDER_URL)
-  return new ethers.Wallet(PK, provider)
+  return new ethers.Wallet(process.env.PK, provider)
 }
 
 module.exports = {

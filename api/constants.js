@@ -1,4 +1,3 @@
-const PK = ''
 const PROVIDER_URL = 'https://rpc.gnosischain.com/'
 const GAS_LIMIT = '3000000'
 const GAS_PRICE = '2000000000' // 2 gwei
